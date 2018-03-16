@@ -2,7 +2,7 @@
 
 var $overlay = $('<div id="overlay"></div>');
 var $overlayWrapper = $('<div id="overlay-wrapper" class="clearfix"></div>');
-var $imageWrapper = $('<div id="image-wrapper" class"clearfix"></div>');
+var $imageWrapper = $('<div id="image-wrapper" class="clearfix"></div>');
 var $image = $('<img>');
 var $caption = $('<p></p>');
 var $previous = $('<div id="previous" class="button"></div>');
@@ -47,7 +47,7 @@ function getCurrentImage(currentImage) {
     // Stores the anchor's href attribute to $imageLocation object 
     $imageLocation = $(currentImage).attr('href');
 
-    // Updates overlay image src attibute with $imageLocation object
+    // Updates overlay image src attribute with $imageLocation object
     $image.attr('src', $imageLocation);
 
     // Stores anchor's child (img) longdesc attribute to $captionText object

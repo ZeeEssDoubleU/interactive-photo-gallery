@@ -25,7 +25,7 @@ function searchImages() {
         console.log(imageLongDesc.includes(searchInput));
 
         // Stores true or false (see previous comment) into isSearchInLongDesc variable.
-        var isSearchInLongDesc = imageCache[i].children[0].getAttribute('longdesc').toLowerCase().includes(searchInput);
+        var isSearchInLongDesc = imageLongDesc.includes(searchInput);
 
         // If true, show anchor element.
         if (isSearchInLongDesc) {
@@ -40,6 +40,10 @@ function searchImages() {
             imageCache[i].style.display = 'none';
         }
     }
+    
+    // Logs arrays for troubleshooting
+    console.log(imageCache);
+    console.log(overlayImagesArray);
 
     // Returns overlayImagesArray function.
     return overlayImagesArray;
